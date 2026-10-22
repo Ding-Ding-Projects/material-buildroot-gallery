@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "project": "Material Buildroot",
+  "displayedApplicationVersion": "0.1.1",
+  "status": "Four genuine captures inspected and included in this source. Public publication remains pending. They show two setup views and two failed preparation/diagnostic states. No successful image build, ISO, boot, export, LAN, tunnel, persistence, or complete layout-matrix result is claimed.",
+  "historicalGallery": {
+    "url": "https://ding-ding-projects.github.io/material-buildroot/gallery/",
+    "existingReviewedImageCount": 67,
+    "copiedOrNewlyReviewedInThisUpdate": false
+  },
+  "captures": [
+    { "id": "images-current", "file": "images/images-current.png", "screen": "Images workspace", "state": "Standalone action and resumable image draft; saved intent is not a verified image", "capturedAt": "2026-10-22T19:58:10.359Z", "timezone": "UTC", "theme": "dark", "viewport": "1440x962", "scale": 1.5, "language": "bilingual", "kind": "page", "sha256": "c34fd5376250d0d27f1a87d42381dbcdc85cc30e29e9afca26ef5f5821b0d319" },
+    { "id": "standalone-source", "file": "images/standalone-source.png", "screen": "Standalone OS setup", "state": "Source step with no inputs selected", "capturedAt": "2026-10-22T19:58:28.735Z", "timezone": "UTC", "theme": "dark", "viewport": "1440x962", "scale": 1.5, "language": "bilingual", "kind": "page", "sha256": "ce5507659caed0b566d1e96473a1bc5d1caf641f94a27814b0d4286ce87f53d4" },
+    { "id": "build-incomplete", "file": "images/job-visible.png", "screen": "Standalone OS build step", "state": "Failed preparation state APPLIANCE_BUILD_FAILED; no successful compilation, image, ISO, boot, or export", "capturedAt": "2026-10-22T20:10:59.510Z", "timezone": "UTC", "theme": "dark", "viewport": "1440x962", "scale": 1.5, "language": "bilingual", "kind": "page", "sha256": "7cc0a102b733609f97d25f6d157d9416a7a97d047f358f4747c2ac4de15217c0" },
+    { "id": "build-diagnostic", "file": "images/diagnostic-visible.png", "screen": "Standalone OS diagnostic", "state": "Failed preparation state SOURCE_IDENTITY_MISMATCH; no compilation, ISO, boot, or export succeeded", "capturedAt": "2026-10-22T20:42:01.211Z", "timezone": "UTC", "theme": "dark", "viewport": "1440x962", "scale": 1.5, "language": "bilingual", "kind": "page", "sha256": "7e94049273a8d67ab700ab5d6201d415d2d1ca179c01edb41f0406324fbc893b" }
+  ]
+}

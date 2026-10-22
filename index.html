@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Reviewed visual evidence for Material Buildroot desktop workflows.">
+  <title>Material Buildroot visual evidence</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to gallery</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Material Buildroot visual evidence home">Material Buildroot</a>
+    <label class="language-label" for="language">Language / 語言</label>
+    <select id="language" aria-label="Choose display language">
+      <option value="en">English</option>
+      <option value="zh-HK">繁體中文</option>
+    </select>
+  </header>
+  <main id="main">
+    <section class="intro" id="top" aria-labelledby="title">
+      <p class="eyebrow" data-en="Reviewed application evidence" data-zh="已核實應用程式畫面證據">Reviewed application evidence</p>
+      <h1 id="title" data-en="See what the current build actually shows" data-zh="查看目前版本實際顯示的內容">See what the current build actually shows</h1>
+      <p class="lead" data-en="Four inspected captures show image-project choices, standalone setup, a failed preparation state, and its diagnostic. No successful image build or boot is claimed." data-zh="四張已檢視畫面展示映像專案選項、獨立作業系統設定、準備失敗狀態及其診斷。此處沒有聲稱映像建置或啟動成功。">Four inspected captures show image-project choices, standalone setup, a failed preparation state, and its diagnostic. No successful image build or boot is claimed.</p>
+      <nav class="task-nav" aria-label="Gallery tasks">
+        <a href="#image-projects" data-en="Image projects" data-zh="映像專案">Image projects</a>
+        <a href="#standalone-setup" data-en="Standalone setup" data-zh="獨立設定">Standalone setup</a>
+        <a href="#diagnostic" data-en="Failure diagnostic" data-zh="失敗診斷">Failure diagnostic</a>
+      </nav>
+    </section>
+    <section class="controls" aria-label="Gallery controls">
+      <label for="filter" data-en="Show" data-zh="顯示">Show</label>
+      <select id="filter">
+        <option value="all" data-en="All captures" data-zh="所有畫面">All captures</option>
+        <option value="workflow" data-en="Setup workflow" data-zh="設定流程">Setup workflow</option>
+        <option value="failure" data-en="Failure states" data-zh="失敗狀態">Failure states</option>
+      </select>
+      <output id="count" aria-live="polite"></output>
+      <a class="older-link" href="https://ding-ding-projects.github.io/material-buildroot/gallery/" data-en="Open the earlier public gallery (67 historical images)" data-zh="開啟較早的公開畫廊（67 張歷史圖片）">Open the earlier public gallery (67 historical images)</a>
+    </section>
+    <section id="captures" class="gallery" aria-label="Reviewed captures">
+      <article class="capture" id="image-projects" data-kind="workflow">
+        <div class="image-frame"><a href="images/images-current.png"><img src="images/images-current.png" width="2160" height="1443" loading="lazy" alt="Material Buildroot Images workspace with controls to create a standalone operating system, create or open an image project, and resume a saved image draft. The page states the saved intent is not a verified image."></a></div>
+        <div class="copy"><p class="eyebrow">Images workspace · 2026-10-22 19:58:10 UTC</p><h2 data-en="Image project choices" data-zh="映像專案選項">Image project choices</h2><p data-en="The workspace offers standalone setup, a new image project, opening an existing project, and resuming a draft. The visible note distinguishes saved intent from a verified output." data-zh="工作區提供獨立設定、新建映像專案、開啟現有專案及繼續草稿。畫面明確區分已儲存意向與已驗證輸出。">The workspace offers standalone setup, a new image project, opening an existing project, and resuming a draft. The visible note distinguishes saved intent from a verified output.</p><details><summary data-en="Evidence details" data-zh="證據詳情">Evidence details</summary><p>Displayed version: 0.1.1. Theme: dark. Viewport: 1440 × 962 at 150%. Capture type: application page.</p></details></div>
+      </article>
+      <article class="capture" id="standalone-setup" data-kind="workflow">
+        <div class="image-frame"><a href="images/standalone-source.png"><img src="images/standalone-source.png" width="2160" height="1443" loading="lazy" alt="Material Buildroot standalone operating system setup at the Source step, showing an image name, source selection, container image reference, distribution choice, and a search for WSL distributions."></a></div>
+        <div class="copy"><p class="eyebrow">Standalone setup · 2026-10-22 19:58:28 UTC</p><h2 data-en="Choose a standalone source" data-zh="選擇獨立來源">Choose a standalone source</h2><p data-en="The first setup step names the output and asks for a supported source and distribution. The screen warns that unsupported inputs cannot be assumed compatible." data-zh="第一個設定步驟輸入輸出名稱，並選擇支援的來源及發行版。畫面提醒不可假設不支援的輸入相容。">The first setup step names the output and asks for a supported source and distribution. The screen warns that unsupported inputs cannot be assumed compatible.</p><details><summary data-en="Evidence details" data-zh="證據詳情">Evidence details</summary><p>Displayed version: 0.1.1. Theme: dark. Viewport: 1440 × 962 at 150%. Capture type: application page.</p></details></div>
+      </article>
+      <article class="capture" data-kind="failure">
+        <div class="image-frame"><a href="images/job-visible.png"><img src="images/job-visible.png" width="2160" height="1443" loading="lazy" alt="Material Buildroot standalone setup Build step showing the recorded failed state APPLIANCE_BUILD_FAILED and controls to refresh, cancel, export the log, review choices, go back, or save progress."></a></div>
+        <div class="copy"><p class="eyebrow">Recorded failure state · 2026-10-22 20:10:59 UTC</p><h2 data-en="Build preparation did not complete" data-zh="建置準備未完成">Build preparation did not complete</h2><p data-en="The application records APPLIANCE_BUILD_FAILED while the phase is preparing. This capture documents the failure and available recovery actions; it does not claim a completed build." data-zh="應用程式在準備階段記錄 APPLIANCE_BUILD_FAILED。此畫面記錄失敗及可用的復原操作，沒有聲稱建置完成。">The application records APPLIANCE_BUILD_FAILED while the phase is preparing. This capture documents the failure and available recovery actions; it does not claim a completed build.</p><details><summary data-en="Evidence details" data-zh="證據詳情">Evidence details</summary><p>Displayed version: 0.1.1. Theme: dark. Viewport: 1440 × 962 at 150%. Capture type: application page.</p></details></div>
+      </article>
+      <article class="capture" id="diagnostic" data-kind="failure">
+        <div class="image-frame"><a href="images/diagnostic-visible.png"><img src="images/diagnostic-visible.png" width="2160" height="1443" loading="lazy" alt="Material Buildroot shows the recorded APPLlANCE_BUILD_FAILED state and a detailed SOURCE_IDENTITY_MISMATCH diagnostic. It says to select the source and create a fresh preview; no image or ISO build succeeded."></a></div>
+        <div class="copy"><p class="eyebrow">Source identity diagnostic · 2026-10-22 20:42:01 UTC</p><h2 data-en="Inspect the recorded source diagnostic" data-zh="查看來源診斷記錄">Inspect the recorded source diagnostic</h2><p data-en="The diagnostic asks for source selection and a fresh preview after a source identity change. It explicitly says the observed state proves no compilation, ISO, boot, or export." data-zh="來源識別變更後，診斷要求重新選擇來源並建立預覽。畫面明確指出目前證據不代表編譯、ISO、啟動或匯出成功。">The diagnostic asks for source selection and a fresh preview after a source identity change. It explicitly says the observed state proves no compilation, ISO, boot, or export.</p><details><summary data-en="Evidence details" data-zh="證據詳情">Evidence details</summary><p>Displayed version: 0.1.1. Theme: dark. Viewport: 1440 × 962 at 150%. Capture type: application page. Diagnostic code: SOURCE_IDENTITY_MISMATCH.</p></details></div>
+      </article>
+    </section>
+    <footer><p>Every image opens its original full-size file. The four image hashes and provenance timestamps are listed in <a href="captures.json">the capture inventory</a>.</p><p><a href="https://github.com/Ding-Ding-Projects/material-buildroot">Material Buildroot source project</a> · <a href="https://ding-ding-projects.github.io/material-buildroot/gallery/">Earlier public gallery</a></p></footer>
+  </main>
+</body>
+</html>
