@@ -18,4 +18,4 @@ The current evidence is limited to visible application states. It does not estab
 
 ## Privacy and provenance
 
-The inventory records the project name, displayed application version, visible state, capture time in UTC, image filename, and image SHA-256. It omits local paths, unpublished source revisions, executable fingerprints, and machine-specific details.
+The inventory records the project name, displayed application version, visible state, capture time in UTC, image filename, and image SHA-256. It excludes local filesystem paths and information specific to the capture environment.
